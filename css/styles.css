@@ -50,7 +50,7 @@ img {
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
 }
 
 .section{
@@ -92,12 +92,10 @@ img {
 
 /*-----------------------------------------NAVIGATION-----------------------------------------*/
 
-.navigation{
-    margin-right: 331px;
-}
-/*---------------------------fix-----------------------*/
-.navigate-list :not(:last-child) {
-    margin-right: 50px;
+.navigate-list{
+    display: flex;
+    align-items: center;
+    padding: 0;
 }
 
 .navigation-link {
@@ -107,6 +105,7 @@ img {
     line-height: 1.14;
     letter-spacing: 0.02em;
     display: flex;
+    margin-right: 50px;
 }
 
 .header-contacts{
@@ -118,6 +117,13 @@ img {
     color: #757575;
     display: flex;
     align-items: center;
+}
+
+.contact-list{
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+    padding: 0;
 }
 
 .header-email{
@@ -318,6 +324,10 @@ img {
     color: var(--white-bg-txt);
     margin-bottom: 9px;
     margin-top: 20px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
 }
 
 .footer {
